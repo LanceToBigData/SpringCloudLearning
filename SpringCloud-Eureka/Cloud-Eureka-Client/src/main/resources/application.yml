@@ -1,0 +1,15 @@
+#设置服务端口号
+server:
+  port: 8082
+
+eureka:
+  client:
+    serviceUrl:
+      #注册中心的地址
+      defaultZone: http://localhost:8081/eureka/
+
+spring:
+  application:
+    #当前应用名称
+    name: eureka-client-A
+
