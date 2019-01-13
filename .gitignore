@@ -23,3 +23,4 @@
 /dist/
 /nbdist/
 /.nb-gradle/
+/SpringCloud-Eureka/Cloud-Eureka-Server/target
