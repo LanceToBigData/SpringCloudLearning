@@ -1,14 +1,22 @@
-#服务端口号
+# port config
 server:
         port: 8081
-#eureka相关配置
+
 eureka:
   instance:
+    #setting current instace host name
     hostname: localhost
   client:
-    #由于该应用为注册中心,所以设置为false,代表不向注册中心注册自己
+    #Since the app is a registry, it is set to false, which means you are not registering
+    #yourself with the registry.
     register-with-eureka: false
-    #由于注册中心的职责就是维护服务实例,它并不需要去检索服务,所以也设置为false
+    #Since the role of the registry is to maintain a service instance, it does not need to
+    #retrieve the service, so it is also set to false.
     fetchRegistry: false
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+spring:
+  application:
+    #app name config
+    name: eureka-registry

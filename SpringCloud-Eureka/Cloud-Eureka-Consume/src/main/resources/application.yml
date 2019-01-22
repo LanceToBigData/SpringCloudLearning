@@ -1,0 +1,12 @@
+#setting app port
+server:
+  port: 8083
+
+spring:
+  application:
+    #setting this app name
+    name: EUREKA-CONSUME-A
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8081/eureka/
