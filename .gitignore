@@ -24,3 +24,5 @@
 /nbdist/
 /.nb-gradle/
 /SpringCloud-Eureka/Cloud-Eureka-Server/target
+/SpringCloud-Eureka/Cloud-Eureka-Client/target/classes/com/lance/study/*.class
+controller
